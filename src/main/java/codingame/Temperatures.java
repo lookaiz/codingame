@@ -38,6 +38,7 @@ public class Temperatures {
             }
         }
         System.out.println(n);
+        in.close();
     }
 
 }
