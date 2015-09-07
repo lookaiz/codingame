@@ -27,6 +27,7 @@ public class AsciiArt {
             }
             System.out.println(sb.toString());
         }
+        in.close();
     }
 
     public static int getCharIndex(char letter) {
