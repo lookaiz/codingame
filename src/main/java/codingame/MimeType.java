@@ -24,12 +24,7 @@ public class MimeType {
             String fNAME = in.nextLine(); // One file name per line.
             if (fNAME.contains(".")) {
                 fNAME = fNAME.substring(fNAME.lastIndexOf(".") + 1);
-                if (mimes.containsKey(fNAME.toLowerCase())) {
-                    System.out.println(mimes.get(fNAME.toLowerCase()));
-                }
-                else {
-                    System.out.println("UNKNOWN");
-                }
+                System.out.println(mimes.getOrDefault(fNAME.toLowerCase(), "UNKNOWN"));
             }
             else {
                 System.out.println("UNKNOWN");
