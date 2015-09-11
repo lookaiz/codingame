@@ -1,4 +1,4 @@
-package codingame;
+package codingame.easy;
 
 import java.util.HashMap;
 import java.util.Map;
